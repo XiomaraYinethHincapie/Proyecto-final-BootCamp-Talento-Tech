@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #B0D9CA;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.back-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem; 
+    color: white;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+.back-arrow:hover {
+    color: #ddd;
+    transform: scale(1.2); 
+}
+
+.header {
+    width: 100%;
+    background-color: #6C8C71;
+    padding: 20px 0; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeInDown 1s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.header p {
+    margin: 0;
+    text-align: center;
+    color: wheat;
+}
+
+/* Texto introductorio */
+.intro p {
+    text-align: justify;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffffcc;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #e3e3e3;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#calcular-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #64732F, #34401A);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3)
+}
+
+#calcular-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+}
+
+/* Animación de entrada */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo-principal {
+    width: 100%;
+    background: linear-gradient(45deg, #6C8C71, #4CAF50);
+    padding: 18px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeInDown 1s ease;
+}

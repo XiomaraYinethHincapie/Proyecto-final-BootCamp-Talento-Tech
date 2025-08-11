@@ -1,10 +1,9 @@
 body {
-    background-color: #6C8C71;
+    background-color: #B0D9CA;
 }
 
 .header p {
-    text-align: center;
-    margin-top: 30px;
+    margin: 5px 5px 5px;
 }
 
 .header {
@@ -13,8 +12,8 @@ body {
 }
 
 .header-calculadora {
-    background-color: #1E4033;
-    color: white;
+    background-color: #0e8557;
+    color: #2c3e50;
     padding: 20px 0;
     text-align: center;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
@@ -29,7 +28,7 @@ body {
 .header-calculadora h2 {
     font-size: 1.2rem;
     font-weight: normal;
-    color: #e0e0e0;
+    color: #2c3e50;
 }
 
 a.position-absolute i {
@@ -57,3 +56,25 @@ a.position-absolute i:hover {
     margin-top: 10%;
 }
 
+.titulo-principal {
+    background: linear-gradient(45deg, #6C8C71, #4CAF50);
+    padding: 18px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeInDown 1s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
