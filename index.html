@@ -3,49 +3,55 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/style.css" />
     <title>Proyecto sobre la mina El Cerrejón</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
     <main class="banner">¡El cambio hacia un planeta más limpio!</main>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li>
-                <a href="#que-es">¿Qué es?</a>
-                <ul>
-                    <li><a href="#historia">Historia de Cerrejón</a></li>
-                    <li><a href="#carbon">Reservas de Carbon</a></li>
-                    <li><a href="#comunidades">Comunidades Wayuú</a></li>
-
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#que-es" data-bs-toggle="dropdown">¿Qué es?</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#historia">Historia de Cerrejón</a></li>
+                            <li><a class="dropdown-item" href="#carbon">Reservas de Carbón</a></li>
+                            <li><a class="dropdown-item" href="#comunidades">Comunidades Wayuú</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#operacion" data-bs-toggle="dropdown">Operación</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#extraccion">Proceso de extracción</a></li>
+                            <li><a class="dropdown-item" href="#maquinaria">Maquinaria y Tecnología</a></li>
+                            <li><a class="dropdown-item" href="#transporte">Sistema de Transporte</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#renovables" data-bs-toggle="dropdown">Energías Renovables</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#eolica">Energía Eólica</a></li>
+                            <li><a class="dropdown-item" href="#solar">Energía Solar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="grafica.html">Graficas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
                 </ul>
-
-            </li>
-            <li>
-                <a href="#operacion">Operación</a>
-                <ul>
-                  <li><a href="#extraccion">Proceso de extracción</a></li>
-                  <li><a href="#maquinaria">Maquinaria y Tecnología</a></li>  
-                  <li><a href="#transporte">Sistema de Trasporte</a></li>
-                </ul>
-            
-            </li>
-            
-            <li>
-                <a href="#renovables">Energías Renovables</a>
-                <ul>
-                    <li><a href="#eolica">Energia eólica</a></li>
-                    <li><a href="#solar">Energia Solar</a></li>
-                </ul>
-            </li>
-            <li><a href="elcerrejon.html" target="_blank">El Cerrejón</a></li>
-            <li><a href="#calculadora.html" target="_blank">Zona Costera</a></li>
-        </ul>
+            </div>
+        </div>
     </nav>
 
-    <header class="header" id="inicio">
+    
+         <header class="header" id="inicio">
         <h1>El Cerrejón</h1>
         <h2>La Joya Negra de La Guajira</h2>
 
@@ -173,7 +179,7 @@
 </section>
 
 <section class="seccion-energia solar" id="renovables">
-    <h2 class="titulo-energia" id="eolica">☀️ Energía Solar</h2>
+    <h2 class="titulo-energia" id="solar">☀️ Energía Solar</h2>
     <img src="https://electronova.com.gt/wp-content/uploads/2023/08/modulos-fotovoltaicos-planta-solar-1024x682.jpg" alt="Energía solar" class="imagen-energia">
     <p class="texto-energia">
         La energía solar es la energía madre de la Tierra. Gracias a la radiación solar, por ejemplo, las plantas realizan la fotosíntesis de la clorofila y ponen en marcha el proceso que permite la supervivencia de los seres vivos que habitan el planeta. La radiación solar también es el origen de los vientos, las mareas y los combustibles fósiles: el Sol es el motor principal de casi todas las formas de energía de nuestro planeta.

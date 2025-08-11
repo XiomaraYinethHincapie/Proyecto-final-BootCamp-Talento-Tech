@@ -103,8 +103,6 @@ main {
     
 }
 
-
-
 /*menu desplegable*/
 .navbar ul li ul {
             display: none;
@@ -113,7 +111,7 @@ main {
             left: 0;
             background-color: #388e3c;
             min-width: 200px;
-            z-index: 1000;
+            z-index: 10;
         }
 .navbar ul li:hover > ul {
             display: block;
@@ -148,10 +146,6 @@ main {
     margin: 2rem 0;
 }
 
-
-
-        
-/*card*/
 .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -238,14 +232,13 @@ main {
     color: #2A3219;
 }
 
-/*energia renovable*/
 
 .seccion-energia {
     padding: 50px 20px;
     margin: 40px auto;
     max-width: 1000px;
     border-radius: 20px;
-    background-color: #ffffff22; /* fondo semitransparente */
+    background-color: #ffffff22; 
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
